@@ -1,27 +1,68 @@
 body{
     background-color: #f1f4fd;
+    margin:0;
+}
+.attribution{
+    font-size: 11px; text-align: center; 
+    color: hsl(228, 45%, 44%); 
 }
 .container{
-    position:relative;
     border-radius: 10px;
-    margin: 10px;
-    
+
 }
-.container-summary{
-    position:absolute;
-    background-color:white;
-    display: inline-block;
-    width: 40%;
+
+.result{
+    background-color: #302ce9;
+    border-radius: 50%;
+    width: 100px;
     height: 100px;
-    bottom : 0;
+    text-align: center;
+    align-items: center; /* why is not working the vertical alignment?*/
 }
 
 .container-result{
-    background-color:blue;
     display: inline-block;
-    position:absolute;
-    width: 20%;
-    height: 100px;
-    top:0;
+    background-color:blue;
+    width: 40%;
+    height: 250px;
+   
+}
+.container-summary{
+    display: inline-block;
+    text-align: center;
+    
+    background-color:white;
+    width: 40%;
+    height: 250px;
+   
 }
 
+.p-summary{
+    
+    border-radius: 10px;
+    
+    height: 30px;
+}
+
+
+.reaction{
+    
+    background-color:#fff6f5 ;
+}
+.memory{
+    
+    background-color:#fffbf2 ;
+}
+.verbal{
+    
+    background-color:#f2fafa ;
+}
+.visual{
+    
+    background-color:#f3f3fd ;
+}
+
+.button-continue{
+   background-color: #302ce9;
+   
+}
