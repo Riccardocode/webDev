@@ -1,3 +1,18 @@
+@font-face {
+    font-family: HankenMedium;
+    src:url('../assets/fonts/static/HankenGrotesk-Medium.ttf')
+}
+@font-face {
+    font-family: HankenBold;
+    src:url('../assets/fonts/static/HankenGrotesk-Bold.ttf')
+}
+@font-face {
+    font-family: HankenExtraBold;
+    src:url('../assets/fonts/static/HankenGrotesk-ExtraBold.ttf')
+}
+
+
+
 body{
     background-color: #f1f4fd;
     margin:0;
@@ -23,55 +38,84 @@ body{
     color: hsl(228, 45%, 44%); 
 }
 .container{
-    border-radius: 10px;
+    border-radius: 20px;
+    width: 45vw;
+    height: 60vh;
 
 }
 
+
+
 .result{
-    background-color: #302ce9;
-   border-radius: 50%;
+    
+    background-color: #452cdf;
+    border-radius: 50%;
     width: 100px;
     height: 100px;
     text-align: center;
-    align-items: center; /* why is not working the vertical alignment?*/
+    align-items: flex-start; /* why is not working the vertical alignment?*/
+    
+   
 }
 
+.scored-text{
+    color:#aaa8ff;
+    width: 70%;
+    text-align: center;
+    font-family:HankenMedium;
+}
 .container-result{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:blue;
-    width: 40%;
-    height: 250px;
-   z-index: 4;
+    background-image: linear-gradient(to bottom, #6e55dd , #312ce8);
+    z-index: 4;
+    font-family: HankenBold;
+}
+.h3-header{
+    color:#c5baff;
+    margin-top: 1rem;
+    
 }
 .container-summary{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    
+    font-family:HankenMedium ;
     background-color:white;
-    width: 40%;
-    height: 250px;
+    
     border-radius: 0 10px 10px 0;
     margin-left: -1rem;
     z-index: 0;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .p-summary{
-    
     border-radius: 10px;
-    
     height: 30px;
+    
+}
+.h3-summary{
+    font-family:HankenMedium;
+    text-align: start;
+    margin-left: 1rem;
+    color:#474f66;
+    
+
 }
 
-
-.reaction{
+.sumBox{
+    width: 80%;
+    height: 10%;
+    margin-left: 1rem;
     
+}
+.reaction{
     background-color:#fff6f5 ;
 }
 .memory{
-    
     background-color:#fffbf2 ;
 }
 .verbal{
@@ -79,11 +123,9 @@ body{
     background-color:#f2fafa ;
 }
 .visual{
-    
     background-color:#f3f3fd ;
 }
 
 .button-continue{
    background-color: #302ce9;
-   
 }
