@@ -1,7 +1,23 @@
 body{
     background-color: #f1f4fd;
     margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    outline: 1px solid blue;
 }
+
+.wrapper {
+    width: 80vw;
+    outline: 3px solid pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
 .attribution{
     font-size: 11px; text-align: center; 
     color: hsl(228, 45%, 44%); 
@@ -13,7 +29,7 @@ body{
 
 .result{
     background-color: #302ce9;
-    border-radius: 50%;
+   border-radius: 50%;
     width: 100px;
     height: 100px;
     text-align: center;
@@ -21,11 +37,14 @@ body{
 }
 
 .container-result{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color:blue;
     width: 40%;
     height: 250px;
-   
+   z-index: 4;
 }
 .container-summary{
     display: inline-block;
@@ -34,7 +53,9 @@ body{
     background-color:white;
     width: 40%;
     height: 250px;
-   
+    border-radius: 0 10px 10px 0;
+    margin-left: -1rem;
+    z-index: 0;
 }
 
 .p-summary{
