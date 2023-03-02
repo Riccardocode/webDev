@@ -107,13 +107,16 @@ body{
 }
 
 .sumBox{
-    width: 80%;
+    width: 70%;
     height: 10%;
     margin-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
 }
 .reaction{
-    background-color:#fff6f5 ;
+    background-color:#fff6f5 ;    
 }
 .memory{
     background-color:#fffbf2 ;
@@ -127,5 +130,7 @@ body{
 }
 
 .button-continue{
-   background-color: #302ce9;
+    background-image: linear-gradient(to bottom, #6e55dd , #312ce8);
+    border-radius: 30px;
+    color:white;
 }
