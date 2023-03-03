@@ -1,77 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/style.css">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
- 
-</head>
-<body>
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <div class="container wrapper">
+      <!--############# Container Result-->
+      <div class="container container-result">
+        <h3 class="h3-header">Your Result</h3>
 
-  <div class="container wrapper">
+        <div class="result">
+          <p class="ptag">76</p>
+          <p style="color: gray">of 100</p>
+        </div>
 
-    <!--############# Container Result-->
-    <div class="container container-result">
-      <h3 class="h3-header">Your Result</h3>
-      
-      <div class="result">
-        <p class="ptag">
-         76
-        </p>
-        <p style="color:gray;margin-top:0;">
-          of 100
-        </p>
+        <div class="result_content">
+          <h3 style="color: white">Great</h3>
+          <p class="scored-text">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
       </div>
-       
-      <h3 style="color:white;">Great</h3>
-      <p class="scored-text" >
-        You scored higher than 65% of the people who have taken these tests.
-      </p>
-    </div>
-    <!--############# End Container result-->
+      <!--############# End Container result-->
 
-    <!--############# Container Summary-->
-    <div class="container container-summary">
-    
-     <h3 class="h3-summary" >Summary</h3>
-      
-        <p class="reaction p-summary sumBox">
-          
-          <span style="color:#e9938f;">
-            <img src="assets/images/icon-reaction.svg" width="20px" height="20px" alt="">
-            Reaction
-          </span>
-           80 <span style="color:#b3aeba;">/ 100</span> 
-          
-        </p >
-        <p class="memory p-summary sumBox" style="color:#ffbf46;">
-          <img src="assets/images/icon-memory.svg" width="20px" height="20px" alt="">
-          Memory
-          92 / 100
-        </p>
-        <p class="verbal p-summary sumBox" style="color:#79dbc5;">
-          <img src="assets/images/icon-verbal.svg" width="20px" height="20px" alt="">
-          Verbal
-          61 / 100
-        </p>
-        <p class="visual p-summary sumBox" style="color:#1125d6;">
-          <img src="assets/images/icon-visual.svg" width="20px" height="20px" alt="">
-          Visual
-          72 / 100
-        </p>
-      
-      
-      <button class="button-continue p-summary sumBox" style="justify-content: center;">Continue</button>
-      
+      <!--############# Container Summary-->
+      <div class="container container-summary">
+        <h3 class="h3-summary">Summary</h3>
+
+        <div class="summary_details">
+          <p class="reaction p-summary sumBox">
+            <span style="color: #e9938f">
+              <img
+                src="assets/images/icon-reaction.svg"
+                width="20px"
+                height="20px"
+                alt=""
+              />
+              Reaction
+            </span>
+            <span style="color: #b3aeba">
+              <span style="color: #e9938f"> 80</span> / 100
+            </span>
+          </p>
+          <p class="memory p-summary sumBox" style="color: #ffbf46">
+            <img
+              src="assets/images/icon-memory.svg"
+              width="20px"
+              height="20px"
+              alt=""
+            />
+            Memory 92 / 100
+          </p>
+          <p class="verbal p-summary sumBox" style="color: #79dbc5">
+            <img
+              src="assets/images/icon-verbal.svg"
+              width="20px"
+              height="20px"
+              alt=""
+            />
+            Verbal 61 / 100
+          </p>
+          <p class="visual p-summary sumBox" style="color: #1125d6">
+            <img
+              src="assets/images/icon-visual.svg"
+              width="20px"
+              height="20px"
+              alt=""
+            />
+            Visual 72 / 100
+          </p>
+        </div>
+
+        <button
+          class="button-continue p-summary sumBox"
+          style="justify-content: center"
+        >
+          Continue
+        </button>
+      </div>
+      <!--############# End Container Summary-->
     </div>
-    <!--############# End Container Summary-->
-  </div>
-  
-  
-</body>
+  </body>
 </html>

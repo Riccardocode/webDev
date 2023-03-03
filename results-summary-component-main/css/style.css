@@ -13,7 +13,11 @@
     src: url('../assets/fonts/static/HankenGrotesk-ExtraBold.ttf')
 }
 
-
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     background-color: #f1f4fd;
@@ -23,7 +27,7 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
 }
 
 .wrapper {
@@ -43,22 +47,22 @@ body {
 .container {
     border-radius: 20px;
     width: 45vw;
-    height: 60vh;
+    height: 70vh;
 
 }
 
 
 
 .result {
-
+    aspect-ratio: 1/1;
     background-color: #452cdf;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 150px;
     text-align: center;
-    align-items: flex-start;
-
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .scored-text {
@@ -78,6 +82,15 @@ body {
     font-family: HankenBold;
 }
 
+.result_content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 .h3-header {
     color: #c5baff;
     margin-top: 1rem;
@@ -88,31 +101,41 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 30px;
     font-family: HankenMedium;
     background-color: white;
     border-radius: 0 10px 10px 0;
     margin-left: -1rem;
     z-index: 0;
+    padding-inline: 2rem;
+}
 
+.summary_details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    height: 50%;
+    /* outline: 1px solid blue; */
 }
 
 .p-summary {
+    width: 100%;
     border-radius: 10px;
-    height: 30px;
-
+    padding: 20px 5px;
 }
 
 .h3-summary {
     font-family: HankenMedium;
     align-self: flex-start;
-    margin-left: 1rem;
+    /* margin-left: 1rem;   */
     color: #474f66;
 }
 
 .sumBox {
-    width: 70%;
     height: 10%;
-    margin-left: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -139,9 +162,13 @@ body {
     background-color: #303b59;
     border-radius: 30px;
     color: white;
+    transition: all 300ms ease;
+    cursor: pointer;
+    width: 100%;
 }
 
 .button-continue:hover {
+    border-color: transparent;
     background-image: linear-gradient(to bottom, #6e55dd, #312ce8);
 }
 
