@@ -1,21 +1,23 @@
 @font-face {
     font-family: HankenMedium;
-    src:url('../assets/fonts/static/HankenGrotesk-Medium.ttf')
+    src: url('../assets/fonts/static/HankenGrotesk-Medium.ttf')
 }
+
 @font-face {
     font-family: HankenBold;
-    src:url('../assets/fonts/static/HankenGrotesk-Bold.ttf')
+    src: url('../assets/fonts/static/HankenGrotesk-Bold.ttf')
 }
+
 @font-face {
     font-family: HankenExtraBold;
-    src:url('../assets/fonts/static/HankenGrotesk-ExtraBold.ttf')
+    src: url('../assets/fonts/static/HankenGrotesk-ExtraBold.ttf')
 }
 
 
 
-body{
+body {
     background-color: #f1f4fd;
-    margin:0;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,11 +34,13 @@ body{
     height: 60vh;
 }
 
-.attribution{
-    font-size: 11px; text-align: center; 
-    color: hsl(228, 45%, 44%); 
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(228, 45%, 44%);
 }
-.container{
+
+.container {
     border-radius: 20px;
     width: 45vw;
     height: 60vh;
@@ -45,110 +49,129 @@ body{
 
 
 
-.result{
-    
+.result {
+
     background-color: #452cdf;
     border-radius: 50%;
     width: 100px;
     height: 100px;
     text-align: center;
     align-items: flex-start;
-    
-   
+
+
 }
 
-.scored-text{
-    color:#aaa8ff;
+.scored-text {
+    color: #aaa8ff;
     width: 70%;
     text-align: center;
-    font-family:HankenMedium;
+    font-family: HankenMedium;
 }
-.container-result{
+
+.container-result {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(to bottom, #6e55dd , #312ce8);
+    background-image: linear-gradient(to bottom, #6e55dd, #312ce8);
     z-index: 4;
     font-family: HankenBold;
 }
-.h3-header{
-    color:#c5baff;
+
+.h3-header {
+    color: #c5baff;
     margin-top: 1rem;
-    
+
 }
-.container-summary{
+
+.container-summary {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family:HankenMedium ;
-    background-color:white;
+    font-family: HankenMedium;
+    background-color: white;
     border-radius: 0 10px 10px 0;
     margin-left: -1rem;
     z-index: 0;
-    
+
 }
 
-.p-summary{
+.p-summary {
     border-radius: 10px;
     height: 30px;
-    
-}
-.h3-summary{
-    font-family:HankenMedium;
-    align-self: flex-start;
-    margin-left: 1rem;
-    color:#474f66;
+
 }
 
-.sumBox{
+.h3-summary {
+    font-family: HankenMedium;
+    align-self: flex-start;
+    margin-left: 1rem;
+    color: #474f66;
+}
+
+.sumBox {
     width: 70%;
     height: 10%;
     margin-left: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-}
-.reaction{
-    background-color:#fff6f5 ;    
-}
-.memory{
-    background-color:#fffbf2 ;
-}
-.verbal{
-    background-color:#f2fafa ;
-}
-.visual{
-    background-color:#f3f3fd ;
+
 }
 
-.button-continue{
+.reaction {
+    background-color: #fff6f5;
+}
+
+.memory {
+    background-color: #fffbf2;
+}
+
+.verbal {
+    background-color: #f2fafa;
+}
+
+.visual {
+    background-color: #f3f3fd;
+}
+
+.button-continue {
     background-color: #303b59;
     border-radius: 30px;
-    color:white;
+    color: white;
 }
 
-.button-continue:hover{
-    background-image: linear-gradient(to bottom, #6e55dd , #312ce8);
+.button-continue:hover {
+    background-image: linear-gradient(to bottom, #6e55dd, #312ce8);
+}
+
+.ptag {
+    color: white;
+    font-size: 3rem;
+    font-family: HankenExtraBold;
+    margin-top: 0.6rem;
+    margin-bottom: 0;
 }
 
 @media screen and (max-width: 700px) {
     .wrapper {
-      flex-wrap: wrap;
+        flex-wrap: wrap;
     }
-    .container-summary{
+
+    .container-summary {
         margin-top: -1rem;
         border-radius: 10px;
         margin-left: 0;
     }
-    .sumBox{
-        margin-left: 0;        
+
+    .sumBox {
+        margin-left: 0;
     }
-    .container-result{
+
+    .container-result {
         border-top-left-radius: 0;
         border-top-right-radius: 0;
         height: 80%;
-        justify-content:baseline;
+        justify-content: baseline;
     }
-  }
+}
