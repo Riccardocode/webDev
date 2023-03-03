@@ -180,7 +180,13 @@ body {
     margin-bottom: 0;
 }
 
-@media screen and (max-width: 700px) {
+.icon-align{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
     .wrapper {
         flex-wrap: wrap;
     }
