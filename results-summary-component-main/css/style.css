@@ -130,7 +130,17 @@ body{
 }
 
 .button-continue{
-    background-image: linear-gradient(to bottom, #6e55dd , #312ce8);
+    background-color: #303b59;
     border-radius: 30px;
     color:white;
 }
+
+.button-continue:hover{
+    background-image: linear-gradient(to bottom, #6e55dd , #312ce8);
+}
+
+@media screen and (max-width: 700px) {
+    .wrapper {
+      flex-wrap: wrap;
+    }
+  }
