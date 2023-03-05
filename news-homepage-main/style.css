@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid blue; */
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    padding: 3rem 4rem;
+    font-family: Inter, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* root element font size = 16px
+1rem = root element font size
+
+*/
+
+header {
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style-type: none; /* remove list items*/
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+
+header nav ul li {
+    cursor: pointer;
+    /*border right left and top have 0 px*/
+    border-bottom: 2px solid transparent;
+    transition: all 300ms ease;
+}
+
+header nav ul li:hover {
+    border-color: hsl(35, 77%, 62%);
+}
+
+.top_content {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.top_content main {
+    width: 70%;
+}
+
+/* > select only the top level tag*/
+.top_content main > img {
+    width: 100%;
+    aspect-ratio: 4/2;
+    /* outline: 1px solid purple; */
+    /* object-fit how does it fit within the container*/
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content h2 {
+    width: 40%;
+    font-size: 3rem;
+    padding-right: 3.8rem;
+    font-weight: 800;
+}
+
+.content > div {
+    width: 50%;
+}
+
+.top_content aside {
+    width: 30%;
+}
